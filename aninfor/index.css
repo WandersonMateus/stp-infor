@@ -1,0 +1,147 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: #cfd9e9;
+}
+
+img {
+    width: 100%;
+}
+.header-box {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    background: #11555c;
+}
+header .header-left {
+    display: flex;
+    align-items: center;
+}
+header .header-left .logo {
+    width: 140px;
+}
+header .header-left nav {
+    margin-left: 50px;
+}
+header .header-left nav ul {
+    display: flex;
+}
+
+.nav-menu ul li a {
+    display: block;
+    color: #cfd9e0;
+    font-size: 25px;
+    padding: 10px 10px;
+    transition: 0.2s;
+    border-radius: 50px;
+}
+.nav-menu ul li a:hover {
+    color: #11101b;
+    background: #fefefe;
+}
+.nav-menu ul li a.active {
+    color: #11101b;
+    background: #fefefe;
+}
+.nav-menu .login-signup {
+    display: none;
+}
+header .header-right {
+    display: flex;
+    align-items: center;
+}
+header .login-signup {
+    color: #cfd9e0;
+    font-weight: bold;
+}
+
+header .header-right .icone {
+    margin-left: 20px;
+    cursor: pointer;
+    display: none;
+}
+header .header-right .icone div {
+    width: 30px;
+    height: 2px;
+    margin: 6px 0;
+    background: #fff;
+}
+@media only screen and (max-width: 800px) {
+    header {
+        padding: 0 20px;
+    }
+    header .header-right .icone {
+        display: block;
+    }
+    header .header-left nav {
+        margin: 0;
+        position: absolute;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: fit-content;
+        background-color: #11555c;
+        padding: 30px;
+        transition: 0.3s;
+        text-align: center;
+        z-index: -1;
+    }
+    header .header-left nav.active {
+        top: 40px;
+    }
+    header .header-left nav ul {
+        display: block;
+    }
+}
+
+
+@media only screen and (max-width: 900px) {
+    .nav-menu ul li a {
+        padding: 10px 15px;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .nav-menu ul li a {
+        padding: 10px 30px;
+    }
+}
+
+@media only screen and (min-width: 1050px) {
+    .nav-menu ul li a {
+        padding: 10px 40px;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .nav-menu ul li a {
+        padding: 10px 90px;
+    }
+}
+
+
+
+
+.bloco-left {
+    float: left;
+    width: 1000px;
+    height: 1000px;
+    background: rgb(98, 114, 121);
+}
+
+.bloco-right {
+    float: right;
+    width: 510px;
+    height: 1000px;
+    background: rgb(56, 128, 106);
+}
+

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar using HTML, CSS and Javascript</title>
+    <link rel="stylesheet" href="./index.css">
+    <script src="javascript.js"></script>
+</head>
+<body>
+    <header class="header-box">
+        <div class="header-left">
+        <div class="logo">
+            <a href="index.html"><img src="./img-home/logotipo.png" alt=""></a>
+        </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li>
+                        <a href="" class="active">Animes</a>
+                    </li>
+                    <li>
+                        <a href="">Filmes</a>
+                    </li>
+                    <li>
+                        <a href="">Séries</a>
+                    </li>
+                    <li>
+                        <a href="">Contato</a>
+                    </li>
+                    <li>
+                        <a href="">Sobre</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-right">
+            <div class="icone">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </header>
+
+    <section class="bloco-left">
+
+    </section>
+    <aside class="bloco-right">
+
+    </aside>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        icone = document.querySelector(".icone");
+        nav = document.querySelector("nav");
+        icone.onclick = function() {
+            nav.classList.toggle("active");
+        }
+    </script>
+</body>
+</html>
